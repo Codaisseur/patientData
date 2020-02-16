@@ -31,3 +31,8 @@ patients.forEach(function(patient) {
 
   console.log(patient.weight);
 });
+
+patients.forEach(function(patient) {
+  // HERE IS HOW TO CHECK YOURSELF
+  console.log("CHECK TO SEE WHAT IS PATIENT:", patient);
+});
