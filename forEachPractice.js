@@ -34,5 +34,13 @@ patients.forEach(function(patient) {
 
 patients.forEach(function(patient) {
   // HERE IS HOW TO CHECK YOURSELF
-  console.log("CHECK TO SEE WHAT IS PATIENT:", patient);
+  console.log(
+    "CHECK TO SEE WHAT IS PATIENT:",
+    patient.gender,
+    patient.lastName
+  );
+
+  const { lastName, gender } = patient;
+
+  console.log(lastName, gender);
 });
