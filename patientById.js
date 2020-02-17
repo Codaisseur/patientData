@@ -1,14 +1,11 @@
 const patients = require("./patients");
-// dynamic data: run like this $ node patientById.js 2412
 const id = parseInt(process.argv[2]);
 
+// id === patient.id will already resolve to true or false
+// so we don't need to use an if statement
+
 const specificPatient = patients.find(function(patient) {
-  console.log("WHAT IS PATIENT?", patient);
-  if (id === patient.id) {
-    return true;
-  } else {
-    return false;
-  }
+  return id === patient.id;
 });
 
 console.log("OUTPUT:", specificPatient);
