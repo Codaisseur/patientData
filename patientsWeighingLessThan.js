@@ -11,6 +11,8 @@ const patientsWeighingLessThan = patients.filter(function(patient) {
     "PATIENT WEIGHS LESS THAN 75?",
     patient.weight < weight
   );
+
+  return patient.weight < weight;
 }); // your logic here
 
 console.log("OUTPUT:", patientsWeighingLessThan);
