@@ -1,6 +1,7 @@
 // patientByEmail.js
 const patients = require("./patients");
-const email = "radolthineg@mayoclinic.com";
+// Dynamic input: run with $ node patientByEmail.js zrothery8@yellowpages.com
+const email = process.argv[2];
 
 console.log(patients);
 
