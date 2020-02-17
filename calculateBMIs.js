@@ -9,9 +9,9 @@ function calculateBMI(height, weight) {
 const bmis = patients.map(function(patient) {
   console.log("WHAT IS PATIENT?", patient);
 
-  let BMI; // calculate BMI for a patient here
+  const BMI = calculateBMI(patient.height, patient.weight); // calculate BMI for a patient here
 
-  return; // return BMI for a patient here
+  return BMI; // return BMI for a patient here
 });
 
 console.log(bmis);
