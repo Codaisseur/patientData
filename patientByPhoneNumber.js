@@ -10,6 +10,8 @@ const specificPatient = patients.find(function(patient) {
     "Match?",
     patient.phoneNumber === phoneNumber
   );
+
+  return patient.phoneNumber === phoneNumber;
 });
 
 console.log(specificPatient);
