@@ -1,14 +1,8 @@
 const patients = require("./patients");
-// hardcoding age 65 for now, we can make this dynamic later
 const age = parseInt(process.argv[2]);
 
 const patientsOlderThan = patients.filter(function(patient) {
-  console.log("WHAT IS PATIENT?", patient);
-  if (patient.age > age) {
-    return true;
-  } else {
-    return false;
-  }
+  return patient.age > age;
 });
 
 console.log("OUTPUT:", patientsOlderThan);
