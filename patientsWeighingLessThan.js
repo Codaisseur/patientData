@@ -1,17 +1,10 @@
 // patientsWeighingLessThan.js
 const patients = require("./patients");
-const weight = 75;
+const weight = parseInt(process.argv[2]);
 
 console.log(patients);
 
 const patientsWeighingLessThan = patients.filter(function(patient) {
-  console.log(
-    "WHAT IS PATIENT WEIGHT:",
-    patient.weight,
-    "PATIENT WEIGHS LESS THAN 75?",
-    patient.weight < weight
-  );
-
   return patient.weight < weight;
 }); // your logic here
 
