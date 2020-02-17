@@ -2,13 +2,15 @@ const patients = require("./patients");
 console.log(patients);
 
 const anonimizedData = patients.map(function(patient) {
+  const { id, age, gender, height, weight, dailyExercise } = patient;
+
   return {
-    id: patient.id,
-    age: patient.age,
-    gender: patient.gender,
-    height: patient.height,
-    weight: patient.weight,
-    dailyExercise: patient.dailyExercise
+    id: id,
+    age: age,
+    gender: gender,
+    height: height,
+    weight: weight,
+    dailyExercise: dailyExercise
   };
 });
 
