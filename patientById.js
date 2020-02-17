@@ -1,6 +1,6 @@
 const patients = require("./patients");
-// hardcoding id 4212 for now, we can make this dynamic later
-const id = 2412;
+// dynamic data: run like this $ node patientById.js 2412
+const id = parseInt(process.argv[2]);
 
 const specificPatient = patients.find(function(patient) {
   console.log("WHAT IS PATIENT?", patient);
