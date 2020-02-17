@@ -13,6 +13,8 @@ const specificPatient = patients.find(function(patient) {
     "match?",
     patient.email === email
   );
+
+  return patient.email === email;
 });
 
 console.log(specificPatient);
