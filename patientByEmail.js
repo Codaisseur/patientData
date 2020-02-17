@@ -4,6 +4,8 @@ const email = "radolthineg@mayoclinic.com";
 
 console.log(patients);
 
-let specificPatient; // your logic here
+const specificPatient = patients.find(function(patient) {
+  console.log(patient);
+});
 
 console.log(specificPatient);
