@@ -4,7 +4,9 @@ const weight = 75;
 
 console.log(patients);
 
-const patientsWeighingLessThan = patients; // your logic here
+const patientsWeighingLessThan = patients.filter(function(patient) {
+  console.log("WHAT IS PATIENT", patient);
+}); // your logic here
 
 console.log("OUTPUT:", patientsWeighingLessThan);
 console.log("TOTAL NUMBER OF PATIENTS", patients.length);
